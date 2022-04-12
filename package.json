@@ -1,5 +1,5 @@
 {
-  "name": "node-tgz-downloader",
+  "name": "prepare-nodedep-tar",
   "description": "Downloads all of the node_modules based on a package-lock.json file",
   "authors": "Meir017",
   "version": "3.12.0",
@@ -33,7 +33,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Meir017/node-tgz-downloader.git"
+    "url": "https://github.com/FELDSAM-INC/node-tgz-downloader.git"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.9",
