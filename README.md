@@ -3,11 +3,18 @@
 [![NPM Downloads][downloads-image]][downloads-url]
 
 # prepare-nodedep-tar (node-tgz-downloader)
-Forked version which prereserve /-/ in files path, so it can be easily used with existing package-lock.json file for onffline install. Example:
+Forked version which prereserve `/-/` in files path, so it can be easily used with existing package-lock.json file for offline install.
+
+### Example:
 
 `sed -i -e 's~\(resolved": "\)[^\/]*\/~\1file:..\/..\/opennebula-fireedge-modules-6.0.3.1~' package-lock.json`
 
-it changes source from `https://registry.npmjs.org/semver/-/semver-5.7.1.tgz` to `file:../../opennebula-fireedge-modules-6.0.3.1/registry.npmjs.org/semver/-/semver-5.7.1.tgz`
+it changes source from
+
+- from: `https://registry.npmjs.org/semver/-/semver-5.7.1.tgz`
+- to: `file:../../opennebula-fireedge-modules-6.0.3.1/registry.npmjs.org/semver/-/semver-5.7.1.tgz`
+
+and you can use this tool to prepare offline files with correct filesystem structure 
 
 Downloads all of the tarballs based on one of the following:
 
